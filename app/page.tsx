@@ -4,12 +4,10 @@ import WorkflowSection from "@/components/sections/workflow-section";
 
 export default function Home() {
   return (
-    <div className="grow">
-      <main className="pt-16">
-        <MainSection />
-        <ActiveFundsSection />
-        <WorkflowSection />
-      </main>
-    </div>
+    <>
+      <MainSection />
+      <ActiveFundsSection />
+      <WorkflowSection />
+    </>
   );
 }

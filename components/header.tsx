@@ -1,4 +1,4 @@
-import ButtonRounded from "./buttons/button-rounded";
+import RoundedButton from "./buttons/rounded-button";
 
 export default function Header() {
   return (
@@ -21,7 +21,7 @@ export default function Header() {
               className="text-gray-700 hover:text-gray-600 font-medium transition-colors"
               href="/all-fund"
             >
-              Fund
+              Funds
             </a>
             <a
               className="text-gray-700 hover:text-gray-600 font-medium transition-colors"
@@ -31,7 +31,7 @@ export default function Header() {
             </a>
           </nav>
           <div className="shrink-0">
-            <ButtonRounded>Connect Wallet</ButtonRounded>
+            <RoundedButton>Connect Wallet</RoundedButton>
           </div>
         </div>
       </div>
