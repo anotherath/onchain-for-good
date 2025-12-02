@@ -67,18 +67,18 @@ export default function FundCard({
           <p className="text-sm text-gray-600">
             <span className="font-semibold text-gray-900">
               ${raised.toLocaleString()}
-            </span>{" "}
-            raised of{" "}
+            </span>
+            raised of
             <span className="font-semibold text-gray-900">
               ${goal.toLocaleString()}
-            </span>{" "}
+            </span>
             goal
           </p>
         </div>
 
         {/* View Fund button */}
         <a
-          className="block w-full bg-green-600 text-white text-center py-2 rounded-lg font-medium hover:bg-green-700 transition-colors"
+          className="block w-full bg-green-600 text-white text-center py-2 rounded-xl font-medium hover:bg-green-700 transition-colors"
           href={href}
         >
           View Fund
