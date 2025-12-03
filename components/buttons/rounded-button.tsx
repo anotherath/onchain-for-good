@@ -2,16 +2,21 @@ import React, { ReactNode } from "react";
 
 interface RoundedButtonProps {
   children: ReactNode;
-  className?: string; // optional, để truyền thêm class
+  size?: "small" | "big";
 }
 
 export default function RoundedButton({
   children,
-  className = "",
+  size = "small",
 }: RoundedButtonProps) {
+  const stype = {
+    small: "px-6 py-2 text-sm",
+    big: "px-8 py-3 text-base font-semibold shadow-md hover:shadow-lg",
+  };
+
   return (
     <button
-      className={`bg-green-600 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-green-700 transition-colors shadow-sm ${className}`}
+      className={`bg-green-600 text-white rounded-full font-medium transition-colors hover:bg-green-700 shadow-sms ${stype[size]}`}
     >
       {children}
     </button>

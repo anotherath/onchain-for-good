@@ -1,3 +1,5 @@
+import RoundedLinkButton from "../buttons/rounded-link-button";
+
 export default function MainSection() {
   return (
     <section className="bg-linear-to-br from-white to-green-50 py-16 lg:py-24">
@@ -35,12 +37,9 @@ export default function MainSection() {
               </p>
             </div>
           </div>
-          <a
-            className="inline-block bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors shadow-md hover:shadow-lg"
-            href="/funds"
-          >
+          <RoundedLinkButton href="/all-fund" size="big">
             Explore Funds
-          </a>
+          </RoundedLinkButton>
         </div>
       </div>
     </section>

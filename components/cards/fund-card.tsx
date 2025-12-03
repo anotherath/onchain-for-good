@@ -79,7 +79,7 @@ export default function FundCard({
         {/* View Fund button */}
         <a
           className="block w-full bg-green-600 text-white text-center py-2 rounded-xl font-medium hover:bg-green-700 transition-colors"
-          href={href}
+          href={"/fund-detail"}
         >
           View Fund
         </a>
