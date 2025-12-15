@@ -1,5 +1,4 @@
 import RoundedButton from "../buttons/rounded-button";
-import TextButton from "../buttons/text-button";
 import FundProposalCard from "../cards/fund-proposal-card";
 
 export default function AllProposals() {
@@ -10,17 +9,19 @@ export default function AllProposals() {
       forVotes: 850,
       againstVotes: 200,
     },
-    {
-      title: "Community water safety training program",
-      status: "Open",
-      forVotes: 850,
-      againstVotes: 200,
-    },
+
     {
       title: "Install 5 new wells in village A",
       status: "Approved",
       forVotes: 1250,
       againstVotes: 50,
+    },
+
+    {
+      title: "Maintenance equipment purchase",
+      status: "Rejected",
+      forVotes: 620,
+      againstVotes: 120,
     },
   ];
 
@@ -38,7 +39,7 @@ export default function AllProposals() {
         ))}
       </div>
       <div className="text-center mt-8">
-        <RoundedButton>Show more</RoundedButton>{" "}
+        <RoundedButton>Show more</RoundedButton>
       </div>
     </section>
   );
