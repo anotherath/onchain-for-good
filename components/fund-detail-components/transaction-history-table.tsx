@@ -1,7 +1,5 @@
 import { shorten } from "@/utils/format";
-
 type TransactionType = "in" | "out";
-
 type Transaction = {
   type: TransactionType;
   from: string; // FULL address
@@ -10,14 +8,12 @@ type Transaction = {
   time: string;
   tx: string; // FULL tx hash
 };
-
 type TransactionHistoryTableProps = {
   title?: string;
   transactions: Transaction[];
   currency?: string;
   explorerBaseUrl?: string;
 };
-
 const columns = [
   { key: "time", label: "Time", align: "left" },
   { key: "type", label: "Type", align: "center" },
@@ -26,7 +22,6 @@ const columns = [
   { key: "amount", label: "Amount", align: "center" },
   { key: "tx", label: "Tx", align: "right" },
 ];
-
 export default function TransactionHistoryTable({
   title = "Transaction History",
   transactions,
@@ -35,11 +30,10 @@ export default function TransactionHistoryTable({
 }: TransactionHistoryTableProps) {
   return (
     <section>
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">{title}</h2>
-
+      <h2 className="text-2xl font-bold text-gray-900 mb-6">{title}</h2>{" "}
       <div className="bg-white rounded-2xl border  border-gray-100 overflow-hidden">
         <div className="overflow-x-auto">
-          <table className="w-full text-sm">
+          <table className="min-w-[660px] lg:min-w-[640px] w-full text-sm">
             <thead className="bg-gray-50">
               <tr>
                 {columns.map((c) => (

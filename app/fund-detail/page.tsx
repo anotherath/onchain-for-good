@@ -21,7 +21,7 @@ export default function FundDetail() {
       </div>
       <FundProposalList />
       <div className="grid grid-cols-3 gap-8">
-        <div className="col-span-2">
+        <div className="col-span-3 lg:col-span-2">
           <TransactionHistoryTable
             transactions={[
               {
@@ -107,7 +107,7 @@ export default function FundDetail() {
             ]}
           />
         </div>
-        <div className="col-span-1">
+        <div className="col-span-3 lg:col-span-1">
           <TopDonorsTable
             donors={[
               { address: "0x1234...56781", amount: 5000 },
