@@ -8,6 +8,6 @@ export default function Home() {
       <MainSection />
       <ActiveFundsSection />
       <WorkflowSection />
-    </> 
+    </>
   );
 }

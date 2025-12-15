@@ -68,11 +68,11 @@ export default function FundCard({
             <span className="font-semibold text-gray-900">
               ${raised.toLocaleString()}
             </span>
-            raised of
+            {" raised of "}
             <span className="font-semibold text-gray-900">
               ${goal.toLocaleString()}
             </span>
-            goal
+            {" goal."}
           </p>
         </div>
 

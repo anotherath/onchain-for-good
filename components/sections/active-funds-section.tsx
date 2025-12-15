@@ -1,3 +1,4 @@
+import TextButton from "../buttons/text-button";
 import FundCard from "../cards/fund-card";
 
 export default function ActiveFundsSection() {
@@ -63,12 +64,7 @@ export default function ActiveFundsSection() {
           />
         </div>
         <div className="text-center mt-12">
-          <a
-            className="inline-block text-green-600 font-semibold hover:text-green-700 transition-colors"
-            href="/funds"
-          >
-            View all funds →
-          </a>
+          <TextButton href="/all-funds">View all funds →</TextButton>
         </div>
       </div>
     </section>

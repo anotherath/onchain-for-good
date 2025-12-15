@@ -19,7 +19,7 @@ export default function Header() {
             </a>
             <a
               className="text-gray-700 hover:text-gray-600 font-medium transition-colors"
-              href="/all-fund"
+              href="/all-funds"
             >
               Funds
             </a>

@@ -13,7 +13,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex justify-start md:justify-end gap-8">
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-row gap-3">
               <a
                 className="text-gray-600 hover:text-green-600 text-sm font-medium transition-colors"
                 href="/"
@@ -22,23 +22,15 @@ export default function Footer() {
               </a>
               <a
                 className="text-gray-600 hover:text-green-600 text-sm font-medium transition-colors"
-                href="/funds"
+                href="/all-funds"
               >
-                Fund
+                Funds
               </a>
-            </div>
-            <div className="flex flex-col gap-3">
               <a
                 className="text-gray-600 hover:text-green-600 text-sm font-medium transition-colors"
                 href="/nft"
               >
                 NFT
-              </a>
-              <a
-                href="mailto:contact@onchainforrgood.com"
-                className="text-gray-600 hover:text-green-600 text-sm font-medium transition-colors"
-              >
-                Contact
               </a>
             </div>
           </div>

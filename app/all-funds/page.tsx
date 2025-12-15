@@ -2,7 +2,7 @@ import RoundedButton from "@/components/buttons/rounded-button";
 import FundCard from "@/components/cards/fund-card";
 import Image from "next/image";
 
-export default function AllFund() {
+export default function FundList() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
       <div className="mb-12">
