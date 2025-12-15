@@ -1,3 +1,4 @@
+import TextButton from "../buttons/text-button";
 import FundProposalCard from "../cards/fund-proposal-card";
 
 export default function FundProposalList() {
@@ -37,12 +38,7 @@ export default function FundProposalList() {
         ))}
       </div>
       <div className="text-center mt-8">
-        <a
-          href="/funds/2/proposals"
-          className="inline-block text-green-600 font-semibold hover:text-green-700 transition-colors"
-        >
-          View All Proposals →
-        </a>
+        <TextButton href="/proposal-list">View All Proposals →</TextButton>
       </div>
     </section>
   );
